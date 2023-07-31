@@ -29,11 +29,12 @@ close.addEventListener('click',function(){
 const pawin_slide = new Swiper('#pawin_slide',{
     //자동재생
     autoplay:{
-        delay:1000,//슬라이드 간격 (기본3초(3000)정도)
+        delay:10000,//슬라이드 간격 (기본3초(3000)정도)
         disableOnInteraction:false //사진을 옆으로 넘겨도 오토플레이로 넘어감
     },
     loop:true, //마지막에서 처음으로 넘어갈때 자연스럽게
-    effect:'fade', //제자리 자연스러운 변경
+    // effect:'fade', //제자리 자연스러운 변경
+    direction:'horizontal',
     navigation: { //이전,다음 내비게이션 연결
         // next,prev 객체 연결 시 부모를 안적으면
         // body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
